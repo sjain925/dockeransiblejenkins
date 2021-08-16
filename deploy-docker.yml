@@ -22,7 +22,7 @@
     - name: Start the container
       docker_container:
         name: sidapp
-        image: "jainsid/sidapp:${{DOCKER_TAG}}"
+        image: "jainsid/sidapp:{{DOCKER_TAG}}"
         state: started
         published_ports:
           - 0.0.0.0:8080:8080
